@@ -1,0 +1,23 @@
+.container-prom-top{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+
+}
+.promol{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 4rem;
+}
+.promM{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.promr{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

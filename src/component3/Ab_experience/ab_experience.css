@@ -1,0 +1,45 @@
+.exp_cta{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    text-align: center;
+}
+.exp_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.btn-bor1{
+    margin-top: 1.5rem;
+    height: 50%;
+    padding: 1rem 3rem;
+    color: white;
+    background-color: var(--color-dark);
+}
+
+
+/* ================================= MEDIA QUERIES (MEDIUM DEVICE) ===============*/
+
+@media screen and (max-width:1024px) {
+   
+ .exp_container{
+        grid-template-columns:1fr;
+}
+.desc_exp{
+    width: 70%;
+    margin: 0 auto;
+ }
+}
+
+
+/* ================================= MEDIA QUERIES (SMALL DEVICE) ===============*/
+
+@media screen and (max-width:600px) { 
+   .exp_cta{
+    gap: 2rem;
+   }
+   .desc_exp{
+    width: 100%;
+}
+
+}

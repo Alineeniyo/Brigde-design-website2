@@ -1,0 +1,108 @@
+footer{
+
+    background-color:var(--color-dark);
+    color: white;
+    width: 100vw;
+    padding: 2rem;
+}
+.footer_container{
+    display: flex;
+    gap: 10rem;
+    justify-content: space-evenly;
+    padding: 2rem;
+    /* align-items: center; */
+}
+.permalinks{
+    display: flex;
+    flex-direction: column;
+}
+.permalinks>h4{
+    color: var(--color-varient);
+}
+.foot_loc>h4{
+    color: var(--color-varient);
+    margin-bottom: 0.5rem;
+}
+.footer_sub>h4{
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+.footer_inp{
+    padding: 0.6rem;
+    width: 15rem;
+    color: var(--color-dark);
+}
+::placeholder{
+    font-weight:bold;
+    color: var(--color-dark);
+}
+.footer_right{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+}
+.footer_social{
+    margin-top: 0.5rem;
+    display: flex;
+}
+.footer_social>a{
+    font-size: 1.5rem;
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+.footer_social>a:hover{
+    font-size: 1.5rem;
+    background-color:var(--color-white);
+    border-radius: 50%;
+}
+.enter_right{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 0.4rem 0rem 0rem 0.4rem;
+    display: flex; 
+    align-items: center;
+    padding: 0.45rem;
+    position: absolute;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    right: 0rem;
+    top: 0rem;
+}
+.foot_in{
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.footer_sub p{
+  margin-top: 0.5rem;
+}
+.call{
+    margin-top: 2rem;
+}
+/* ================================= MEDIA QUERIES (MEDIUM DEVICE) ===============*/
+
+@media screen and (max-width:1024px) {
+
+  .footer_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+    justify-content: center;
+  }
+}
+
+
+/* ================================= MEDIA QUERIES (SMALL DEVICE) ===============*/
+
+@media screen and (max-width:600px) {
+
+ .footer_container{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

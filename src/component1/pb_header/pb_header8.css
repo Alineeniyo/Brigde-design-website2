@@ -1,0 +1,120 @@
+.pb_container{
+    width: 95vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    gap: 5%;
+    text-align: center;    
+}
+.pb_main-cta{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+.pb_main-cta p{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* ================================IMAGE STYLING HERE ==============================================*/
+.img_ic{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+    height: 100%;
+}
+.img_ic img{
+    height: 100%;
+}
+.img_ic_1{
+    position:relative;
+}
+.img_ic_1::before{
+    content: '';
+    position: absolute;
+    background-color: var(--color-light);
+    right: -5.5em;
+    top: 50%;
+    transform: translateY(-50%) skew(-15deg);
+    width: 28.8%;
+    height: 140%;
+    z-index: 1;
+}
+.img_ic_2{
+    position:relative;
+    margin-top:2rem ;
+}
+.img_ic_2::before{
+    content: '';
+    position: absolute;
+    background-color: var(--color-light);
+    left: -5.5em;
+    top: 50%;
+    transform: translateY(-50%) skew(-15deg);
+    width: 28.8%;
+    height: 140%;
+    z-index: 1;
+}
+/* ================================= CALL TO ACTION ================================= */
+.pb_cta{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.pb_desc_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pb_main-cta{
+    display: flex;
+}
+.aw-icon{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.aw-icon i{
+ font-size: 2rem;
+}
+/* ================================= MEDIA QUERIES (MEDIUM DEVICE) ===============*/
+
+@media screen and (max-width:1024px) {
+
+   .pb_container{
+    text-align: start;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+   }
+   .img_ic_1{
+     display: none;
+   }
+   .img_ic_2::before{
+    display: none;
+   }
+   .img_ic{
+    grid-template-columns: 1fr;
+
+}
+}
+
+
+/* ================================= MEDIA QUERIES (SMALL DEVICE) ===============*/
+
+@media screen and (max-width:600px) {
+
+.ic_2{
+    display: none;
+}
+/* .img_ic>.img_ic_1{
+    width: 96%;
+    border: 1px solid black;
+} */
+.img_ic{
+    padding: 1rem;
+}
+
+}

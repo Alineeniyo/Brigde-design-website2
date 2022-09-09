@@ -1,0 +1,38 @@
+.pop_container{
+    background-color: var(--color-varient);
+    height: auto;
+    padding: 2rem 0rem;
+    text-align: center;
+}
+.pop_brand_img{
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem;
+}
+.pop_brand{
+    display:grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 0.1rem;
+    margin-left: 20%;
+}
+.pop_header{
+    margin: 2rem 0rem;
+}
+
+/* ================================= MEDIA QUERIES (SMALL DEVICE) ===============*/
+
+@media screen and (max-width:600px) {
+.pop_brand{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+ }
+ .pop_header{
+   width: 100%;
+}
+}

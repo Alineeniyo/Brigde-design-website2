@@ -1,0 +1,43 @@
+.pb_boxes2_container{
+    text-align: start;
+    height: auto;
+}
+.img_boxes2{
+    width: 80%;
+    display: grid;
+    grid-template-columns:repeat(3 , 1fr);
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.pb2-btn{
+    width: 45%;
+}
+
+/* ================================= MEDIA QUERIES (MEDIUM DEVICE) ===============*/
+
+@media screen and (max-width:1024px) {
+
+   .img_boxes2{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 1rem;
+}
+.img_boxes2{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3 , 1fr);
+}
+}
+
+
+/* ================================= MEDIA QUERIES (SMALL DEVICE) ===============*/
+
+@media screen and (max-width:600px) {
+
+   .img_boxes2{
+    grid-template-columns:1fr;
+    gap: 1rem;
+  }
+}

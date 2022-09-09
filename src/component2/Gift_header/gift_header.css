@@ -1,0 +1,29 @@
+.gift_container{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    justify-content: center;
+}
+.btn-gif{
+    margin-top: 10rem;
+}
+
+/* ================================= MEDIA QUERIES (MEDIUM DEVICE) ===============*/
+
+@media screen and (max-width:1024px) {
+
+   .gift_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+   }
+  .btn-gif{
+    margin-top: 0rem;
+}
+}
+
+

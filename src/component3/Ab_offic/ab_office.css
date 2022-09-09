@@ -1,0 +1,65 @@
+.office-container{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    padding: 1rem;
+    gap: 2%;
+    
+}
+.main_ab1{
+    object-fit: cover;
+    width: 80%;
+    height: 50%;
+}
+.office_desc{
+    margin-top: 5rem;
+}
+.main_ab2{
+    width: 14%;
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+    cursor: pointer;
+    
+}
+.office-head{
+    text-align: center;
+}
+.clicked{
+    filter:saturate(0);
+    transition: var(--transition);
+    border: 2px solid var(--color-primary);
+}
+/* ================================= MEDIA QUERIES (MEDIUM DEVICE) ===============*/
+
+@media screen and (max-width:1024px) {
+
+    .office-container{
+        grid-template-columns: 60% 40%;
+        
+    }
+    .office_desc{
+       margin-top: 0.5rem;
+    }
+}
+
+
+/* ================================= MEDIA QUERIES (SMALL DEVICE) ===============*/
+
+@media screen and (max-width:600px) {
+
+   .office-container{
+        grid-template-columns: 1fr;
+        gap: 0;
+        
+    }
+    .office_desc{
+       margin-top: 0rem;
+    }
+    .main_ab2{
+     width: 18%;  
+    }
+    .main_ab1{
+    width: 100%;
+  }
+
+}

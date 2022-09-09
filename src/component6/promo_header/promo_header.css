@@ -1,0 +1,16 @@
+.prom_header_container{
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+}
+.promo_header_img{
+    width: 40rem;
+    height: 30rem;
+    overflow: hidden;
+}
+.promo_header_img2{
+    margin-top: 5rem;
+    width: 40rem;
+    height: 30rem;
+    overflow: hidden;
+}

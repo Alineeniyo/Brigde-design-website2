@@ -1,0 +1,42 @@
+.machin_container{
+    text-align: start;
+}
+.machine_vis{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    gap: 1rem;
+    align-items: center;
+}
+.ab-mach-h{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* ================================= MEDIA QUERIES (MEDIUM DEVICE) ===============*/
+
+@media screen and (max-width:1024px) {
+    .machine_vis{
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        gap: 0.6rem;
+    }
+    .machine_vis>img:nth-of-type(2){
+       margin-top: 2rem;
+    } 
+}
+
+
+/* ================================= MEDIA QUERIES (SMALL DEVICE) ===============*/
+
+@media screen and (max-width:600px) {
+
+    .machine_vis{
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    .machine_vis_desc{
+        margin-top: 2rem;
+    }
+  .machine_vis>img:nth-of-type(2){
+       margin-top: 0rem;
+    } 
+}

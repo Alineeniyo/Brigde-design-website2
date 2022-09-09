@@ -1,0 +1,122 @@
+.top_nav{
+    width: 100vw;
+    height: 8.5vh;
+    color: var(--color-dark);
+    background-color: rgba(37, 37, 37, 0.862);
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    justify-content: space-between;
+}
+.container-nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    width: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-right: 1rem;   
+}
+.span-nav{
+   position: relative;
+   color: white;
+   transform: translate(-5rem,1.2rem);
+   font-size: 1.5rem;
+   font-weight: bold;
+
+}
+.nav_unord{
+    display: flex;
+}
+.nav_unord > li a{
+    display: block;
+    color: white;
+    padding: 1.5rem 1.5rem;
+    transition: var(--transition);
+    text-align: center;
+
+}
+
+.nav_unord > li a:hover{
+   background-color: white;
+   color: var(--color-primary);
+}
+
+.btn_nav{
+    font-size: 2rem;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    visibility: hidden;
+    outline: none;
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+ }
+
+/* ================================= MEDIA QUERIES (MEDIUM DEVICE) ===============*/
+
+@media screen and (max-width:1024px) {
+ .container-nav{
+    align-items: start;
+    text-align: start;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+ }
+.logo{
+    margin-left:2rem; 
+}
+ .span-nav{
+   display: none;
+ }
+ .top_nav{
+    padding: 1rem;
+    justify-content: space-between;
+ }
+.btn_nav{
+    visibility: visible;
+    opacity: 1;
+ }
+ nav{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transform: translate(-100vh);
+    transition: var(--transition);
+ }
+ .nav_unord{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 6rem;
+ }
+ .responsive-nav{
+    transform: none;
+ }
+ .btn_nav_close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+ }
+ .logo{
+    margin-top: 0rem;
+}
+
+}
+/* ================================= MEDIA QUERIES (SMALL DEVICE) ===============*/
+
+@media screen and (max-width:600px) {
+
+.span-nav{
+   display: none;
+ }
+}
